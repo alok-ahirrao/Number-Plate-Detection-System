@@ -27,7 +27,7 @@ project-root/
     ├── index.css
     ├── main.tsx
     ├── vite-env.d.ts
-
+    ├── other*
 ```
 
 ## Backend
@@ -129,4 +129,4 @@ For more details, see the LICENSE file or contact alokahirrao.ai@gmail.com .
 ---
 
 
-**Happy Developing! 🚀**
+**Happy Developing! 🚀** 
