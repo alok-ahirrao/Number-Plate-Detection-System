@@ -1,0 +1,12 @@
+torch
+opencv-python
+numpy
+fastapi
+uvicorn
+paddleocr
+pillow
+python-multipart
+base64
+asyncio
+concurrent.futures
+collections

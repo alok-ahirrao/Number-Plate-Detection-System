@@ -1,0 +1,158 @@
+.number-plate-detection {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.camera-selection {
+  margin-bottom: 20px;
+}
+
+.select-wrapper {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.camera-select {
+  flex: 1;
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 14px;
+  color: #1e293b;
+  background-color: white;
+  cursor: pointer;
+}
+
+.camera-select:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 1px #2563eb;
+}
+
+.refresh-button {
+  padding: 8px;
+  background-color: #f8fafc;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  transition: all 0.2s;
+}
+
+.refresh-button:hover {
+  background-color: #f1f5f9;
+  color: #1e293b;
+}
+
+.webcam-container {
+  position: relative;
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.webcam {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.controls {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.capture-button {
+  background-color: #2563eb;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.capture-button:hover {
+  background-color: #1d4ed8;
+}
+
+.capture-button:disabled {
+  background-color: #93c5fd;
+  cursor: not-allowed;
+}
+
+.error-message {
+  margin-top: 20px;
+  padding: 12px;
+  background-color: #fee2e2;
+  border: 1px solid #fecaca;
+  border-radius: 6px;
+  color: #dc2626;
+}
+
+.results {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f8fafc;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.results h3 {
+  margin: 0 0 16px 0;
+  color: #1e293b;
+  font-size: 18px;
+}
+
+.result-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  align-items: start;
+}
+
+.result-info p {
+  margin: 8px 0;
+  color: #475569;
+}
+
+.result-info strong {
+  color: #1e293b;
+  font-weight: 600;
+}
+
+.plate-image-container {
+  text-align: center;
+}
+
+.plate-image-container h4 {
+  margin: 0 0 12px 0;
+  color: #1e293b;
+  font-size: 16px;
+}
+
+.plate-image {
+  max-width: 100%;
+  border-radius: 4px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive design */
+@media (max-width: 640px) {
+  .result-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .plate-image-container {
+    margin-top: 16px;
+  }
+}
