@@ -1,9 +1,26 @@
-# Number Plate Detection System
+# Number Plate Detection System 🚗🔍
 
-## Project Overview
-This project is a full-stack application for automatic number plate detection and recognition using a YOLOv5 model for number plate detection and PaddleOCR for text recognition. It consists of a Python-based backend and a React frontend.
+Automatic detection and recognition of vehicle number plates using advanced machine learning techniques.
 
-## Project Structure
+---
+
+## 🎯 Demo Outputs
+
+### GIF Demo
+![Demo GIF](Output/output.gif)
+
+### Image Result
+![Detected Plate](Output/ARPN1.jpg)
+
+---
+
+## 📌 Project Overview
+
+This is a full-stack application for automatic number plate detection and recognition. It leverages YOLOv5 for detecting number plates and PaddleOCR for recognizing characters from detected plates. Built with a Python-based backend and a React frontend for a user-friendly experience.
+
+---
+
+## 📂 Project Structure
 
 ```
 project-root/
@@ -26,74 +43,51 @@ project-root/
     ├── App.tsx
     ├── index.css
     ├── main.tsx
-    ├── vite-env.d.ts
-
+    └── vite-env.d.ts
 ```
 
-## Backend
-The backend consists of:
-- **Framework:** FastAPI
-- **Detection Model:** YOLOv5 (Custom Trained Model: `best.pt`)
-- **OCR Engine:** PaddleOCR
+---
 
-### Backend setup
-1. Navigate to backend folder:
+
+## 🚀 Quick Start
+
+
+## 📥 Model Weights Download
+
+You can download the pre-trained YOLOv5 model weights from the following link:
+
+➡️ [Download Model Weights](https://drive.google.com/drive/folders/1jhmmizg8VguJ6kTWwjdQu7W7sPsMww8a?usp=drive_link)
+
+Place the downloaded weights (`best.pt`) into the `backend/model/` directory.
+
+
+### Clone Repository
+
 ```bash
-cd backend
+git clone https://github.com/alok-ahirrao/Number-Plate-Detection-System.git
 ```
 
-2. Install dependencies:
-```bash
-pip install -r requirements.txt
-```
+### Backend Setup
 
-### Run Backend
-```bash
-python main.py
-```
-The backend API will be accessible at `http://localhost:8000`.
+Navigate to the backend directory, install dependencies, and start the server:
 
-## Frontend
-The frontend is built using:
-- **Framework:** React
-- **Build Tool:** Vite
-
-### Components:
-- **Dashboard:** Main interface.
-- **DetectionPanel:** Number plate detection interface.
-- **HistoryPanel:** View historical detections.
-- **NotificationsPanel:** Notifications system.
-- **NumberPlateDetection:** Handles frontend logic for plate detection interaction.
-- **StatsPanel:** Displays statistics related to detection.
-
-Run the frontend application using:
-```shell
-cd frontend
-npm install
-npm run dev
-```
-
-## Setup
-
-### Backend Setup:
 ```bash
 cd backend
 pip install -r requirements.txt
 python main.py
 ```
+Backend API runs at: [`http://localhost:8000`](http://localhost:8000)
 
-### Frontend Setup:
+### Frontend Setup
+
+Navigate to the frontend directory, install dependencies, and start the development server:
+
 ```bash
 cd frontend
 npm install
 npm run dev
 ```
-
-## API Endpoint
-
-The primary endpoint for detecting number plates is:
-
-- **POST** `/detect_plate`: Accepts images in base64 format, returns detected number plates and associated confidence.
+Frontend app runs at: [`http://localhost:5173`](http://localhost:5173)
 
 ## Technologies Used
 
@@ -105,28 +99,23 @@ The primary endpoint for detecting number plates is:
 - React
 - Vite
 
-## Running the Project
-
-After setting up the backend and frontend:
-- The backend will be accessible at: `http://localhost:8000`
-- The frontend development server typically runs at: `http://localhost:5173`
-
-Ensure the backend server is running to provide the necessary API endpoints to the frontend.
-
-## Contributing
-
-Feel free to contribute by creating feature branches and submitting pull requests for review.
 ---
 
-## **License**
+## 🤝 Contribution
 
-Copyright (c) 2025, Alok Ahirrao
+Feel free to improve this project by submitting pull requests. Your contributions are welcome!
 
-This project is licensed under the Creative Commons Attribution-NonCommercial 4.0 International License.
-You may use and modify this project for personal or educational purposes, but commercial use is prohibited without explicit permission.
-
-For more details, see the LICENSE file or contact alokahirrao.ai@gmail.com .
 ---
 
+## 📜 License
 
-**Happy Developing! 🚀**
+Copyright © 2025, Alok Ahirrao
+
+Licensed under the **Creative Commons Attribution-NonCommercial 4.0 International License**. You may use or modify this project for personal or educational purposes only. Commercial usage requires explicit permission.
+
+For inquiries, please contact [alokahirrao.ai@gmail.com](mailto:alokahirrao.ai@gmail.com).
+
+---
+
+🌟 **Happy Coding!** 🌟
+
